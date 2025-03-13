@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تنسيق حدائق بالكويت</title>
+    <style>
+      /* Reset and Base Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Cairo', sans-serif;
+      }
+
+      body {
+        direction: rtl;
+        text-align: right;
+        overflow-x: hidden;
+      }
+
+      /* Hero Section */
+      .hero {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-image: url('/images/sor-turky/1.jpeg');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .hero-content {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.85);
+        padding: 40px;
+        border-radius: 10px;
+        text-align: center;
+        max-width: 800px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .hero-content h1 {
+        color: #2c7744;
+        margin-bottom: 20px;
+        font-size: 2.5rem;
+      }
+
+      .hero-content p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        color: #333;
+      }
+
+      /* Service Sections */
+      .service-section {
+        padding: 80px 20px;
+      }
+
+      .service-section:nth-child(odd) {
+        background-color: #f9f9f9;
+      }
+
+      .service-container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .service-title {
+        text-align: center;
+        color: #2c7744;
+        margin-bottom: 40px;
+        font-size: 2rem;
+      }
+
+      .service-description {
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #444;
+      }
+
+      .image-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+      }
+
+      .grid-image {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 8px;
+        transition: transform 0.3s;
+      }
+
+      .grid-image:hover {
+        transform: scale(1.03);
+      }
+
+      /* Footer */
+      footer {
+        background-color: #2c7744;
+        color: white;
+        padding: 50px 20px;
+      }
+
+      .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .company-info {
+        margin-bottom: 20px;
+      }
+
+      .company-info h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+
+      .social-links {
+        display: flex;
+        gap: 15px;
+      }
+
+      .social-icon {
+        font-size: 24px;
+        color: white;
+        text-decoration: none;
+      }
+
+      /* Floating Contact Buttons */
+      .floating-contact {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        z-index: 1000;
+      }
+
+      .contact-button {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        text-decoration: none;
+        transition: transform 0.3s;
+      }
+
+      .contact-button:hover {
+        transform: scale(1.1);
+      }
+
+      .phone {
+        background-color: #2c7744;
+      }
+
+      .whatsapp {
+        background-color: #25d366;
+      }
+
+      .contact-icon {
+        font-size: 28px;
+        color: white;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .hero-content {
+          width: 90%;
+          padding: 30px;
+        }
+
+        .hero-content h1 {
+          font-size: 1.8rem;
+        }
+
+        .footer-container {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .social-links {
+          justify-content: center;
+          margin-top: 20px;
+        }
+      }
+    </style>
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts - Cairo is popular for Arabic websites -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>نحن افضل شركة تنسيق حدائق بالكويت</h1>
+        <p>
+          نقدم لكم خدمات متميزة في تنسيق وتصميم الحدائق المنزلية والعامة بأعلى
+          مستويات الجودة وبأسعار منافسة. نمتلك فريقاً من المحترفين ذوي الخبرة
+          الواسعة في مجال تنسيق الحدائق وتجميلها لنضمن لكم حديقة تناسب ذوقكم
+          وتلبي احتياجاتكم.
+        </p>
+      </div>
+    </section>
+
+    <!-- Service Section 1 -->
+    <section class="service-section">
+      <div class="service-container">
+        <h2 class="service-title">تركيب السور التركي</h2>
+        <p class="service-description">
+          نقدم خدمة تركيب السور التركي بأعلى جودة وبمختلف التصاميم العصرية.
+          يتميز السور التركي بالمتانة والجمال ويضيف لمسة فخامة لحديقتك مع توفير
+          الخصوصية والأمان.
+        </p>
+        <div class="image-grid">
+          <img
+            src="/images/sor-turky/1.jpeg"
+            alt="سور تركي 1"
+            class="grid-image"
+          />
+          <img
+            src="/images/sor-turky/2.jpeg"
+            alt="سور تركي 2"
+            class="grid-image"
+          />
+          <img
+            src="/images/sor-turky/3.jpeg"
+            alt="سور تركي 3"
+            class="grid-image"
+          />
+          <img
+            src="/images/sor-turky/4.jpeg"
+            alt="سور تركي 4"
+            class="grid-image"
+          />
+          <img
+            src="/images/sor-turky/5.jpeg"
+            alt="سور تركي 5"
+            class="grid-image"
+          />
+          <img
+            src="/images/sor-turky/6.jpeg"
+            alt="سور تركي 6"
+            class="grid-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Section 2 -->
+    <section class="service-section">
+      <div class="service-container">
+        <h2 class="service-title">تركيب التيل الطبيعي</h2>
+        <p class="service-description">
+          نوفر خدمة تركيب النجيل الطبيعي عالي الجودة الذي يدوم طويلاً ويتحمل
+          الظروف المناخية المختلفة. نضمن لكم مساحات خضراء طبيعية جميلة تعطي
+          إحساساً بالراحة والانتعاش.
+        </p>
+        <div class="image-grid">
+          <img
+            src="/images/tail-tabaiy/1.jpeg"
+            alt="تيل طبيعي 1"
+            class="grid-image"
+          />
+          <img
+            src="/images/tail-tabaiy/2.jpg"
+            alt="تيل طبيعي 2"
+            class="grid-image"
+          />
+          <img
+            src="/images/tail-tabaiy/3.jpg"
+            alt="تيل طبيعي 3"
+            class="grid-image"
+          />
+          <img
+            src="/images/tail-tabaiy/4.jpg"
+            alt="تيل طبيعي 4"
+            class="grid-image"
+          />
+          <img
+            src="/images/tail-tabaiy/5.webp"
+            alt="تيل طبيعي 5"
+            class="grid-image"
+          />
+          <img
+            src="/images/tail-tabaiy/6.jpg"
+            alt="تيل طبيعي 6"
+            class="grid-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Section 3 -->
+    <section class="service-section">
+      <div class="service-container">
+        <h2 class="service-title">تركيب التيل الصناعي</h2>
+        <p class="service-description">
+          نقدم خدمة تركيب العشب الصناعي عالي الجودة والذي يشبه الطبيعي تماماً.
+          يتميز بسهولة العناية به وعدم حاجته للري المستمر، مما يجعله خياراً
+          مثالياً للحدائق المنزلية والمساحات العامة.
+        </p>
+        <div class="image-grid">
+          <img
+            src="/images/tail-senaiy/1.jpeg"
+            alt="تيل صناعي 1"
+            class="grid-image"
+          />
+          <img
+            src="/images/tail-senaiy/2.jpeg"
+            alt="تيل صناعي 2"
+            class="grid-image"
+          />
+          <img
+            src="/images/tail-senaiy/3.jpeg"
+            alt="تيل صناعي 3"
+            class="grid-image"
+          />
+          <img
+            src="/images/tail-senaiy/4.jpeg"
+            alt="تيل صناعي 4"
+            class="grid-image"
+          />
+          <img
+            src="/images/tail-senaiy/5.jpeg"
+            alt="تيل صناعي 5"
+            class="grid-image"
+          />
+          <img
+            src="/images/tail-senaiy/6.jpeg"
+            alt="تيل صناعي 6"
+            class="grid-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Section 4 -->
+    <section class="service-section">
+      <div class="service-container">
+        <h2 class="service-title">زراعة الورود والأشجار</h2>
+        <p class="service-description">
+          نقدم خدمة زراعة مجموعة متنوعة من الورود والأشجار التي تناسب مناخ
+          الكويت. نساعدكم في اختيار النباتات المناسبة لتصميم حديقة متكاملة تضيف
+          جمالاً وحيوية للمكان.
+        </p>
+        <div class="image-grid">
+          <img
+            src="/images/flowers/1.jpeg"
+            alt="ورود وأشجار 1"
+            class="grid-image"
+          />
+          <img
+            src="/images/flowers/2.jpeg"
+            alt="ورود وأشجار 2"
+            class="grid-image"
+          />
+          <img
+            src="/images/flowers/3.jpeg"
+            alt="ورود وأشجار 3"
+            class="grid-image"
+          />
+          <img
+            src="/images/flowers/4.jpeg"
+            alt="ورود وأشجار 4"
+            class="grid-image"
+          />
+          <img
+            src="/images/flowers/5.jpeg"
+            alt="ورود وأشجار 5"
+            class="grid-image"
+          />
+          <img
+            src="/images/flowers/6.jpeg"
+            alt="ورود وأشجار 6"
+            class="grid-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Section 5 -->
+    <section class="service-section">
+      <div class="service-container">
+        <h2 class="service-title">تركيب سور بديل خشب</h2>
+        <p class="service-description">
+          نوفر خدمة تركيب سور بديل الخشب بتصاميم عصرية ومتنوعة. يتميز بمقاومته
+          للعوامل الجوية وسهولة تنظيفه وصيانته، كما أنه صديق للبيئة ويدوم لفترات
+          طويلة دون الحاجة للاستبدال.
+        </p>
+        <div class="image-grid">
+          <img
+            src="/images/wood-sor/1.jpeg"
+            alt="سور بديل خشب 1"
+            class="grid-image"
+          />
+          <img
+            src="/images/wood-sor/2.jpeg"
+            alt="سور بديل خشب 2"
+            class="grid-image"
+          />
+          <img
+            src="/images/wood-sor/3.jpeg"
+            alt="سور بديل خشب 3"
+            class="grid-image"
+          />
+          <img
+            src="/images/wood-sor/4.jpeg"
+            alt="سور بديل خشب 4"
+            class="grid-image"
+          />
+          <img
+            src="/images/wood-sor/5.jpeg"
+            alt="سور بديل خشب 5"
+            class="grid-image"
+          />
+          <img
+            src="/images/wood-sor/6.jpeg"
+            alt="سور بديل خشب 6"
+            class="grid-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="company-info">
+          <h3>شركة تنسيق حدائق بالكويت</h3>
+          <p>
+            نحن متخصصون في تقديم خدمات تنسيق الحدائق بأعلى مستويات الجودة
+            والاحترافية
+          </p>
+        </div>
+        <div class="social-links">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating Contact Buttons -->
+    <div class="floating-contact">
+      <a href="tel:+96500000000" class="contact-button phone">
+        <i class="fas fa-phone contact-icon"></i>
+      </a>
+      <a href="https://wa.me/96500000000" class="contact-button whatsapp">
+        <i class="fab fa-whatsapp contact-icon"></i>
+      </a>
+    </div>
+  </body>
+</html>
